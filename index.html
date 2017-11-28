@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>HTML - Tutorial</title>
+       <link rel="stylesheet" type="text/css" href="styles.css">
+       
+    </head>
+    <body>
+        <div>
+            <p>
+                <img src="https://i.pinimg.com/736x/67/74/cc/6774ccbd24f9aed12af9c485ff065008--wiener-dogs-dachshunds.jpg">
+              <br>
+             <p id="helloText">????</p> 
+             <button id="myButton">Press me</button>
+             <br>
+             I can see changes instantly on my website!
+            </p>
+            <a href="https://google.com" target ="_blank">Go to Google</a> 
+        </div>
+        <div class="link-sections">
+            <p>
+              This is a link to Github:
+            </p>
+            <a href="https://github.com" target ="_blank">Github</a> 
+        </div>
+        <div class="link-sections" >
+            <p>
+              This is a link to Hacker News:
+            </p>
+            <a href="https://news.ycombinator.com/" target ="_blank">HN</a> 
+        </div>
+        <script>
+            var text = document.getElementById("helloText")
+            var button = document.getElementById("myButton")
+            
+            myButton.addEventListener('click',changeIt,false)
+            
+            function changeIt(){
+                text.textContent = "Hello World!"
+            }
+        </script>
+    </body>
+</html>
+
